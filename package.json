@@ -1,0 +1,23 @@
+{
+  "name": "msds-substation-backend",
+  "version": "1.0.0",
+  "description": "Backend service for the MSDS Substation Monitor: Modbus TCP client (reads an ABB RTU560 acting as Modbus TCP server), SQLite telemetry storage, REST API, and WebSocket real-time push.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "modbus-serial": "^8.0.17",
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

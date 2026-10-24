@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+
+# Site-specific register map (copied from the example, contains real
+# addresses once configured — keep it out of version control if it
+# reflects live plant data)
+config/registerMap.json
+
+# Database
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.idea/
+*.swp
+
+# Logs
+npm-debug.log*
